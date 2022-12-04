@@ -16,7 +16,6 @@ WORKDIR /app
 COPY --from=deps /app/node_modules /app/node_modules
 COPY --from=deps /app/yarn.lock /app/yarn.lock
 COPY --from=deps /app/package.json /app/package.json
-COPY tsconfig.json .
 COPY public /app/public
 COPY src /app/src
 RUN ls /app/src

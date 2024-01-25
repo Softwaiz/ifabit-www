@@ -1,0 +1,25 @@
+.header-wrapper {
+    width: 100%;
+    display: block;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 150ms linear;
+}
+
+.header[data-styled="true"]{
+    @apply bg-slate-100 text-slate-700;
+}
+
+.header[data-styled="true"][data-inview="false"] {
+    @apply bg-slate-200 text-slate-700;
+}

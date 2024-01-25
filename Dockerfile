@@ -1,36 +1,18 @@
-FROM node:alpine as base
+FROM node:18-alpine as base
 
-RUN mkdir -p /app
+RUN mkdir /app
 WORKDIR /app
 
-FROM base as deps
-
-COPY package.json .
-COPY yarn.lock .
-
+COPY . ./
 RUN yarn
 
-FROM deps as builder
+FROM base as builder
 
-WORKDIR /app
-COPY --from=deps /app/node_modules /app/node_modules
-COPY --from=deps /app/yarn.lock /app/yarn.lock
-COPY --from=deps /app/package.json /app/package.json
-COPY public /app/public
-COPY src /app/src
-RUN ls /app/src
-
+RUN yarn
 RUN yarn build
 
-FROM base  as runner
+ARG PORT=80
+ENV PORT=${PORT}
+EXPOSE ${PORT}
 
-WORKDIR /app
-
-COPY --from=builder /app/build /app/build
-COPY package.json .
-
-RUN yarn global add serve
-
-ENV PORT=80
-EXPOSE 80
-CMD yarn run deploy
+CMD yarn start

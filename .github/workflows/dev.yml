@@ -41,4 +41,4 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASS }}
-          script: docker pull ifachange/landing:dev && cd /usr/apps/ifachange/ifa.main && dcompose up -d && docker-clean
+          script: docker pull ifachange/landing:dev && cd /usr/apps/ifachange/ifa.dev && dcompose up -d && docker-clean

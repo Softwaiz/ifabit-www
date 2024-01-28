@@ -1,9 +1,8 @@
 import { getFileSource } from "@/core/utils";
-import { NextApiRequest } from "next";
 import { notFound } from "next/navigation";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export const GET = async (request: NextApiRequest) => {
+export const GET = async (request: NextRequest) => {
     let url = new URL(request.url || "");
     let fileName = url.searchParams.get("file") as string;
 

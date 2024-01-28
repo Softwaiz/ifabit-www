@@ -15,7 +15,7 @@ export function CallToAction() {
 
           <div className="flex flex-col items-center justify-center px-16 mt-8 space-y-4 sm:space-y-0 sm:space-x-4 sm:flex-row lg:mt-12 sm:px-0">
             <a
-              href="#"
+              href="https://app.ifabit.com/auth/signup"
               title=""
               className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-semibold text-white transition-all duration-200 bg-primary-600 border border-transparent rounded-md sm:w-auto hover:bg-primary-700 focus:bg-primary-700"
               role="button"
@@ -27,7 +27,7 @@ export function CallToAction() {
           <p className="mt-6 text-base text-black">
             Vous avez deja un compte ?{" "}
             <a
-              href="#"
+              href="https://app.ifabit.com/auth/signin"
               title=""
               className="text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
             >

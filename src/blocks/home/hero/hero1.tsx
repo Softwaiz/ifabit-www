@@ -1,9 +1,9 @@
+import { LogIn } from "lucide-react";
 import Link from "next/link";
 
 export function Hero() {
   return (
     <div className="w-full flex flex-col items-center justify-end text-foreground hero-wrapper">
-      
       <div className="inert">
         <svg
           className="blob"
@@ -18,8 +18,15 @@ export function Hero() {
       </div>
 
       <section className="container grid grid-cols-5 hero">
-        <div className="col-span-3 flex flex-col items-start justify-center gap-6">
-          <h1 className="font-heading font-extrabold text-7xl title">
+        <div className="col-span-5 flex lg:hidden flex-col items-center justify-center pt-header">
+          <img
+            src="/hero-1.webp"
+            alt=""
+            className="w-full h-auto rounded-md bg-transparent mt-header"
+          />
+        </div>
+        <div className="col-span-5 lg:col-span-3 px-4 py-8 my-8 lg:m-0 lg:p-0 flex flex-col items-start justify-center gap-6">
+          <h1 className="font-heading font-extrabold text-4xl lg:text-7xl title">
             Achetez ici des monnaies digitales{" "}
             <span className="on-ramp-text">on-ramp</span>,<br /> Ou vendez{" "}
             <span className="off-ramp-text">off-ramp</span>.
@@ -31,13 +38,14 @@ export function Hero() {
           <div className="w-full">
             <Link
               href="https://app.ifabit.com"
-              className="px-6 py-3 text-sm uppercase font-bold rounded-full text-slate-200 transition-all bg-gradient-to-tr bg-primary-700 hover:bg-secondary-600"
+              className="w-full lg:w-auto px-4 lg:px-6 py-3 text-sm uppercase font-bold rounded-full text-slate-200 transition-all bg-gradient-to-tr bg-primary-700 hover:bg-secondary-600 flex flex-row items-center justify-center gap-4"
             >
               Commencer maintenant
+              <LogIn fontSize={24}/>
             </Link>
           </div>
         </div>
-        <div className="col-span-2 flex flex-col items-center justify-center">
+        <div className="col-span-2 hidden lg:flex flex-col items-center justify-center">
           <img
             src="/hero-1.webp"
             alt=""

@@ -1,0 +1,40 @@
+.DialogOverlay {
+    background-color: var(--black-a9);
+    position: fixed;
+    inset: 0;
+    animation: overlayOpen 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.DialogContent {
+    @apply bg-layer text-white;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    animation: contentOpen 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.DialogContent:focus {
+    outline: none;
+}
+
+@keyframes overlayOpen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes contentOpen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

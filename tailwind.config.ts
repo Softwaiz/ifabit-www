@@ -21,8 +21,14 @@ const config: Config = {
         heading: "var(--font-heading)",
         body: "var(--font-body)"
       },
-      
+
       padding(utils) {
+        return {
+          header: 'var(--header-height)'
+        }
+      },
+
+      margin(utils) {
         return {
           header: 'var(--header-height)'
         }

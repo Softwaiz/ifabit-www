@@ -20,7 +20,19 @@ const config: Config = {
       fontFamily: {
         heading: "var(--font-heading)",
         body: "var(--font-body)"
-      }
+      },
+      
+      padding(utils) {
+        return {
+          header: 'var(--header-height)'
+        }
+      },
+
+      height(utils) {
+        return {
+          header: 'var(--header-height)'
+        }
+      },
     },
   },
   plugins: [],

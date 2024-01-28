@@ -4,7 +4,7 @@ import { getCurrencies } from "@/core/utils";
 
 function TextSection() {
   return (
-    <div className="text-white flex flex-col items-start justify-center gap-4">
+    <div className="text-white flex flex-col items-start justify-center py-0 lg:py-20 gap-4">
       <h4 className="font-heading text-4xl lg:text-6xl font-bold">
         IFABIT vous sert de pont.
       </h4>

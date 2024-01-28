@@ -22,7 +22,7 @@ export function Hero() {
           <img
             src="/hero-1.webp"
             alt=""
-            className="w-full h-auto rounded-md bg-transparent mt-header"
+            className="w-full h-[340px] object-scale-down object-center lg:h-auto rounded-md bg-transparent mt-header"
           />
         </div>
         <div className="col-span-5 lg:col-span-3 px-4 py-8 my-8 lg:m-0 lg:p-0 flex flex-col items-start justify-center gap-6">

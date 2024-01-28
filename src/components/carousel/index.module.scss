@@ -55,7 +55,6 @@
     bottom: 0;
 }
 
-
 .arrow {
     position: absolute;
     top: 50%;
@@ -63,6 +62,10 @@
     width: 56px;
     height: 56px;
     border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     &__left {
         @extend .arrow;
@@ -74,5 +77,17 @@
         @extend .arrow;
         right: 0%;
         transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .embla {
+        --slide-size: 100%;
+    }
+
+    .arrow {
+        @apply bg-layer text-white p-2;
+        width: 46px;
+        height: 46px;
     }
 }

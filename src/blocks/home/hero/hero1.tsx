@@ -35,10 +35,10 @@ export function Hero() {
             Votre passerelle tout-en-un pour trader facilement cryptos, e-money
             et plus
           </p>
-          <div className="w-full">
+          <div>
             <Link
               href="https://app.ifabit.com"
-              className="w-full lg:w-auto px-4 lg:px-6 py-3 text-sm uppercase font-bold rounded-full text-slate-200 transition-all bg-gradient-to-tr bg-primary-700 hover:bg-secondary-600 flex flex-row items-center justify-center gap-4"
+              className="md:w-auto px-4 lg:px-6 py-3 text-sm uppercase font-bold rounded-full text-slate-200 transition-all bg-gradient-to-tr bg-primary-500 hover:bg-secondary-600 flex flex-row items-center justify-center gap-4"
             >
               Commencer maintenant
               <LogIn fontSize={24}/>

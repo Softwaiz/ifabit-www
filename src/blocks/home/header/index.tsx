@@ -51,14 +51,14 @@ export function Header() {
             <nav className="hidden lg:flex flex-row items-center justify-center gap-4">
               <Link
                 href="https://app.ifabit.com/auth/signin"
-                className="px-4 py-3 text-sm whitespace-nowrap bg-primary-600 rounded-md text-slate-200 transition-all hover:bg-primary-500 flex-row items-center justify-start gap-4"
+                className="px-4 py-3 text-sm whitespace-nowrap border border-primary-600 rounded-md text-primary-600 transition-all hover:bg-primary-500 hover:text-slate-100 flex flex-row items-center justify-start gap-4"
               >
                 <LogIn fontSize={24} />
                 Se connecter
               </Link>
               <Link
                 href="https://app.ifabit.com/auth/signup"
-                className="px-4 py-3 text-sm whitespace-nowrap bg-primary-600 rounded-md text-slate-200 transition-all hover:bg-primary-500 flex-row items-center justify-start gap-4"
+                className="px-4 py-3 text-sm whitespace-nowrap bg-teal-500 rounded-md text-slate-200 transition-all hover:bg-teal-700 flex flex-row items-center justify-start gap-4"
               >
                 <UserPlus fontSize={24} />
                 S'inscrire

@@ -17,7 +17,7 @@ export async function Hero2() {
               align: "start",
             }}
           >
-            {currencies.items.map((c) => {
+            {currencies.map((c) => {
               return (
                 <div
                   key={c.id}

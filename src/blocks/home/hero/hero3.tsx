@@ -7,8 +7,7 @@ export function Hero3() {
             Comment ça marche ?
           </h2>
           <p className="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis.
+            Découvrez comment utiliser notre plateforme dès aujourd'hui.
           </p>
         </div>
 

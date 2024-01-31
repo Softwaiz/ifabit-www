@@ -4,7 +4,7 @@ import IconSendReceive from "@/components/icons/send-receive";
 
 export function AboutUs() {
   return (
-    <div className="w-full flex flex-col items-center justify-center bg-slate-100 text-slate-900 about">
+    <div className="section w-full flex flex-col items-center justify-center bg-slate-100 text-slate-900 about">
       <div className="container p-8 py-14 lg:p-16 min-h-screen flex flex-col items-center justify-center gap-4 lg:gap-8">
         <div className="w-full flex flex-col items-start lg:items-center justify-center">
           <h2 className="font-heading font-bold text-4xl lg:text-6xl">Avec ifabit,</h2>

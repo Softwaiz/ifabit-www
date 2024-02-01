@@ -16,7 +16,7 @@ function Member({
   >;
 }) {
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-4">
+    <div className="w-full flex flex-col items-center justify-center gap-4 rounded-md shadow-md">
       <img
         src={imageProps?.src}
         alt={name || imageProps?.alt}
@@ -26,7 +26,7 @@ function Member({
           imageProps?.className
         )}
       />
-      <div className="w-full flex flex-col items-center justify-end">
+      <div className="w-full flex flex-col items-center justify-end py-4">
         <h2 className="font-heading font-bold text-2xl text-center">{name}</h2>
         <h3 className="text-sm opacity-80">{title}</h3>
       </div>
@@ -47,8 +47,8 @@ export default function OurTeam() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-start">
-          <div className="container flex flex-row flex-wrap items-start justify-center gap-4 py-[4rem]">
-            <div className="w-[460px]">
+          <div className="container flex flex-row flex-wrap items-start justify-center gap-4 px-4 lg:px-0 py-[4rem]">
+            <div className="w-full lg:w-[460px]">
               <Member
                 imageProps={{
                   src: "/adnk.jpeg",
@@ -57,7 +57,7 @@ export default function OurTeam() {
                 title="Analyste Financier | Ceo DANGO-NADEY Groupe"
               />
             </div>
-            <div className="w-[460px]">
+            <div className="w-full lg:w-[460px]">
               <Member
                 imageProps={{
                   src: "/max.png",

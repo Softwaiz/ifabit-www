@@ -11,8 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        layer: slate[950],
-        overlay: slate[900],
+        layer: slate[800],
+        overlay: slate[800],
         foreground: slate[100],
         primary: orange,
         secondary: pink

@@ -79,7 +79,7 @@ body {
     }
 }
 
-
-.section {
-    opacity: .5;
+.hero-size {
+    width: 100%;
+    min-height: calc(80vh - var(--header-height));
 }

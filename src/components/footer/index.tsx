@@ -20,17 +20,16 @@ export const Footer = () => {
             <ul className="mt-8 space-y-4">
               <li>
                 <Link
-                  href="/#about"
+                  href="/about-us"
                   title=""
                   className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                 >
-                  {" "}
                   A propos
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/wallets"
                   title=""
                   className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                 >
@@ -142,7 +141,7 @@ export const Footer = () => {
             © Copyright 2024. Tous droits réservés.
           </p>
           <p className="text-sm text-center text-gray-200 opacity-75">
-            ⚡ Groupe Dango-Nadey &
+            ⚡ Dango-Nadey Groupe & {" "}
             <a
               className="hover:underline"
               target="_blank"

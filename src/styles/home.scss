@@ -78,3 +78,8 @@ body {
         }
     }
 }
+
+.hero-size {
+    width: 100%;
+    min-height: calc(80vh - var(--header-height));
+}

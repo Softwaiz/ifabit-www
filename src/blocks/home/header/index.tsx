@@ -5,13 +5,14 @@ import { useState } from "react";
 import { LogIn, Menu, UserPlus } from "lucide-react";
 import { HeaderMobile } from "./mobile";
 import { Logo } from "@/components/logo";
+import { HeaderLinks } from "./links";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      <HeaderWrapper className="bg-layer">
+      <HeaderWrapper className="bg-layer text-slate-100">
         <div className="w-full flex flex-col items-center justify-center">
           <div className="w-full bg-overlay py-1 text-white font-body text-sm hidden lg:flex flex-row items-center justify-center gap-4">
             <p>
@@ -31,38 +32,34 @@ export function Header() {
             <Logo />
             <nav className="grow navigation">
               <ul className="hidden lg:flex flex-row items-center justify-center gap-4">
-                <li>
-                  <Link href="/about-us">A propos</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">Les wallets</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">Devenez partenaire</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">Nous contacter</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">Guides d'intégration</Link>
-                </li>
+                {HeaderLinks.map((link) => {
+                  return (
+                    <li key={link.href}>
+                      {!link.pure ? (
+                        <Link href={link.href}>{link.title}</Link>
+                      ) : (
+                        <a href={link.href}>{link.title}</a>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
             <nav className="hidden lg:flex flex-row items-center justify-center gap-4">
-              <Link
+              <a
                 href="https://app.ifabit.com/auth/signin"
-                className="px-4 py-3 text-sm whitespace-nowrap border border-primary-600 rounded-md text-primary-600 transition-all hover:bg-primary-500 hover:text-slate-100 flex flex-row items-center justify-start gap-4"
+                className="px-4 py-2 text-sm whitespace-nowrap border border-primary-600 rounded-md text-primary-600 transition-all hover:bg-primary-500 hover:text-slate-100 flex flex-row items-center justify-start gap-4"
               >
                 <LogIn fontSize={24} />
                 Se connecter
-              </Link>
-              <Link
+              </a>
+              <a
                 href="https://app.ifabit.com/auth/signup"
-                className="px-4 py-3 text-sm whitespace-nowrap bg-teal-500 rounded-md text-slate-200 transition-all hover:bg-teal-700 flex flex-row items-center justify-start gap-4"
+                className="px-4 py-2 text-sm whitespace-nowrap bg-teal-500 rounded-md text-slate-200 transition-all hover:bg-teal-700 flex flex-row items-center justify-start gap-4"
               >
                 <UserPlus fontSize={24} />
                 S'inscrire
-              </Link>
+              </a>
             </nav>
             <nav className="flex lg:hidden">
               <button className="p-4" onClick={() => setMenuOpen(true)}>

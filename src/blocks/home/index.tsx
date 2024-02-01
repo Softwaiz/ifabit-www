@@ -1,6 +1,6 @@
 import { AboutUs } from "./about-us";
 import { CallToAction } from "./call-to-action";
-import { Footer } from "./footer";
+import { Footer } from "../../components/footer";
 import { Header } from "./header";
 import { Hero } from "./hero/hero1";
 import { Hero2 } from "./hero/hero2";

@@ -3,6 +3,7 @@ import { LogIn, UserPlus, X } from "lucide-react";
 import styles from "./mobile.module.scss";
 import { Logo } from "@/components/logo";
 import Link from "next/link";
+import { HeaderLinks } from "./links";
 
 export function HeaderMobile(props: Dialog.DialogProps) {
   return (
@@ -14,21 +15,17 @@ export function HeaderMobile(props: Dialog.DialogProps) {
             <Logo />
             <nav className="w-full navigation flex flex-col items-center justify-center gap-4">
               <ul className="w-full flex flex-col items-start justify-center text-lg gap-8 px-4">
-                <li>
-                  <Link href="/about-us">A propos</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">Les wallets</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">Devenez partenaire</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">Nous contacter</Link>
-                </li>
-                <li>
-                  <Link href="/about-us">Guides d'intégration</Link>
-                </li>
+                {HeaderLinks.map((link) => {
+                  return (
+                    <li key={link.href}>
+                      {!link.pure ? (
+                        <Link href={link.href}>{link.title}</Link>
+                      ) : (
+                        <a href={link.href}>{link.title}</a>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
             <nav className="w-full flex flex-col items-center justify-center gap-4 px-4">

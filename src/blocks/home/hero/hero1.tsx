@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <div className="w-full flex flex-col items-center justify-end text-foreground hero-wrapper">
+    <div className="section w-full flex flex-col items-center justify-end text-foreground hero-wrapper">
       <div className="inert">
         <svg
           className="blob"

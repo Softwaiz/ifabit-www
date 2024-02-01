@@ -26,7 +26,7 @@ export async function Hero2() {
   let currencies = await getCurrencies();
 
   return (
-    <div className="w-full min-h-height grid grid-cols-5 bg-layer text-slate-900">
+    <div className="section w-full min-h-height grid grid-cols-5 bg-layer text-slate-900">
       <div className="col-span-5 lg:col-span-3 p-8 lg:p-16 flex lg:hidden">
         <TextSection/>
       </div>

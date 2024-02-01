@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "@/styles/home.scss";
 import Script from "next/script";
+import { Header } from "@/blocks/home/header";
+import { Footer } from "@/components/footer";
+import { AnimateWhenInView } from "@/blocks/motions/animateOpacity.client";
 
 export const metadata: Metadata = {
-  title: "Plateforme d'échange crypto/fiat et transferts en Afrique de l'Ouest | IFABIT",
-  description: "La plateforme de référence pour acheter, vendre et transférer vos cryptomonnaies (Bitcoin, Ethereum...), monnaies électroniques (Perfect Money...) et devises fiat (FCFA, Nairas...) en Afrique de l'Ouest et ailleurs. Taux de change imbattables, frais réduits, sécurité maximale.",
-  keywords: "achat crypto, vente crypto, échange crypto, plateforme crypto Afrique, transférer argent Afrique de l'Ouest, envoyer argent, recevoir argent, frais transfert, taux de change"
+  title:
+    "Plateforme d'échange crypto/fiat et transferts en Afrique de l'Ouest | IFABIT",
+  description:
+    "La plateforme de référence pour acheter, vendre et transférer vos cryptomonnaies (Bitcoin, Ethereum...), monnaies électroniques (Perfect Money...) et devises fiat (FCFA, Nairas...) en Afrique de l'Ouest et ailleurs. Taux de change imbattables, frais réduits, sécurité maximale.",
+  keywords:
+    "achat crypto, vente crypto, échange crypto, plateforme crypto Afrique, transférer argent Afrique de l'Ouest, envoyer argent, recevoir argent, frais transfert, taux de change",
 };
 
 export default function RootLayout({
@@ -46,7 +53,12 @@ export default function RootLayout({
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </head>
-      <body>{children}</body>
+      <body className="font-body">
+        <Header />
+        <div className="w-full min-h-screen">{children}</div>
+        <Footer />
+        <AnimateWhenInView selector=".section"/>
+      </body>
     </html>
   );
 }

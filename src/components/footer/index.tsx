@@ -3,8 +3,16 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <section className="w-full py-10 bg-layer sm:pt-16 lg:pt-24">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+    <section className="w-full px-4 sm:px-4 lg:px-0 py-10 bg-layer sm:pt-16 lg:pt-24">
+      <div className="container mx-auto">
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-8 lg:gap-0">
+          <img
+            src="/logo.png"
+            alt="Logo Ifabit"
+            className="bg-transparent h-[56px] w-auto object-cover object-center aspect-auto"
+          />
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-x-5 md:gap-x-12 gap-y-12 ">
           <div>
             <p className="text-base text-gray-400">Navigation</p>
@@ -12,17 +20,16 @@ export const Footer = () => {
             <ul className="mt-8 space-y-4">
               <li>
                 <Link
-                  href="/#about"
+                  href="/about-us"
                   title=""
                   className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                 >
-                  {" "}
                   A propos
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/wallets"
                   title=""
                   className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                 >
@@ -129,18 +136,19 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-
-        <hr className="mt-16 mb-10 border-gray-800" />
-
-        <div className="flex flex-wrap items-center justify-between gap-4 lg:gap-0">
-          <img
-            src="/logo.png"
-            alt="Logo Ifabit"
-            className="bg-transparent h-[56px] w-auto object-cover object-center aspect-auto"
-          />
-
-          <p className="w-auto lg:grow mt-0 lg:md-4 text-sm text-center text-gray-100 md:order-2">
+        <div className="w-full flex flex-col flex-wrap items-center justify-center gap-2 mt-8">
+          <p className="text-sm text-center text-gray-100">
             © Copyright 2024. Tous droits réservés.
+          </p>
+          <p className="text-sm text-center text-gray-200 opacity-75">
+            ⚡ Dango-Nadey Groupe & {" "}
+            <a
+              className="hover:underline"
+              target="_blank"
+              href="https://www.softwaiz.co"
+            >
+              Softwaiz
+            </a>
           </p>
         </div>
       </div>

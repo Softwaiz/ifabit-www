@@ -8,14 +8,14 @@ export default function OurWallets() {
       <div className="w-full mt-header text-slate-900">
         <div className="w-full relative overflow-hidden flex flex-col items-center justify-center bg-layer">
           <div className="text-slate-100 hero-size flex flex-col items-center justify-center gap-6 max-w-2xl">
-            <h2 className="font-heading font-bold text-6xl text-left">
+            <h2 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-left">
               Nos <span className="text-primary-500">#Wallets</span>
             </h2>
           </div>
         </div>
 
         <div className="flex flex-col items-center justify-start">
-          <div className="max-w-4xl grid grid-cols-3 gap-4 text-md py-24">
+          <div className="max-w-4xl grid grid-cols-3 gap-4 text-md py-8 md:py-12 lg:py-24 px-8 lg:px-0">
             <div className="col-span-3 flex flex-col items-start justify-start gap-4">
               <div className="w-full">
                 <h2 className="font-heading font-bold text-2xl">

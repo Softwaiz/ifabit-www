@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <section className="w-full py-10 bg-layer sm:pt-16 lg:pt-24">
+    <section className="w-full px-4 sm:px-4 lg:px-0 py-10 bg-layer sm:pt-16 lg:pt-24">
       <div className="container mx-auto">
         <div className="flex flex-wrap items-center justify-between gap-4 mb-8 lg:gap-0">
           <img

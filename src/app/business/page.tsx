@@ -8,13 +8,13 @@ export default function BusinessOffer() {
     <>
       <div className="w-full mt-header text-slate-900">
         <div className="w-full relative overflow-hidden flex flex-col items-center justify-center bg-layer">
-          <div className="text-slate-100 hero-size flex flex-col items-start justify-center gap-6 max-w-2xl">
-            <h2 className="font-heading font-bold text-6xl text-left">
+          <div className="text-slate-100 hero-size flex flex-col items-start justify-center gap-6 max-w-2xl px-4 lg:px-0 ">
+            <h2 className="font-heading font-bold text-4xl lg:text-6xl text-left">
               Devenez <span className="text-primary-500">#IFAPartner</span>
               <br />
               et gagnez de l'argent !
             </h2>
-            <p className="text-lg">
+            <p className="text-base lg:text-lg">
               Les partenaires reçoivent une commission sur les processus de
               retrait effectués à partir de leur compte.
               <br /> La commission leur est automatiquement reversée sans délai
@@ -24,7 +24,7 @@ export default function BusinessOffer() {
         </div>
 
         <div className="flex flex-col items-center justify-start">
-          <div className="max-w-4xl grid grid-cols-3 gap-4 text-md py-24">
+          <div className="max-w-4xl grid grid-cols-3 gap-4 text-md py-16 lg:py-24 px-4 lg:px-0">
             <div className="col-span-3 flex flex-col items-start justify-start gap-4">
               <h5 className="font-heading text-4xl font-bold">
                 Comment devenir partenaire de IFABIT ?

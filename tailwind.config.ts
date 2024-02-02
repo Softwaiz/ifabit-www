@@ -11,8 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        layer: slate[800],
-        overlay: slate[800],
+        layer: slate[900],
+        overlay: slate[900],
         foreground: slate[100],
         primary: orange,
         secondary: pink
@@ -39,8 +39,6 @@ const config: Config = {
           header: 'var(--header-height)'
         }
       },
-
-      
     },
   },
   plugins: [],

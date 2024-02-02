@@ -1,7 +1,15 @@
 import { CallToAction } from "@/blocks/home/call-to-action";
 import { cn } from "@/lib/utils";
 import "@/styles/home.scss";
+import { Metadata } from "next";
 import { DetailedHTMLProps, HTMLAttributes, ImgHTMLAttributes } from "react";
+
+export const metadata: Metadata = {
+  title: "Offre business #IFAPartner | IFABIT",
+  description: "Devenez partenaire IFABIT et gagnez de l'argent",
+  keywords:
+    "achat crypto, vente crypto, échange crypto, plateforme crypto Afrique, transférer argent Afrique de l'Ouest, envoyer argent, recevoir argent, frais transfert, taux de change",
+};
 
 export default function BusinessOffer() {
   return (

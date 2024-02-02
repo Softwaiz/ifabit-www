@@ -28,7 +28,7 @@ export function Header() {
               </a>
             </p>
           </div>
-          <div className="container flex flex-row items-center justify-between text-sm uppercase font-bold py-1 lg:py-4 gap-4">
+          <div className="container flex flex-row items-center justify-between text-sm uppercase font-bold py-4 gap-4">
             <Logo />
             <nav className="grow navigation">
               <ul className="hidden lg:flex flex-row items-center justify-center gap-4">

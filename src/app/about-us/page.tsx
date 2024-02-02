@@ -2,6 +2,7 @@ import { CallToAction } from "@/blocks/home/call-to-action";
 import "@/styles/home.scss";
 import { AboutPageMotions } from "./motions";
 import { PropsWithChildren } from "react";
+import { Metadata } from "next";
 
 const TextOVerflow = ({
   text,
@@ -103,6 +104,14 @@ function Section02() {
   );
 }
 
+export const metadata: Metadata = {
+  title: "Révolutionner les transactions numériques en Afrique | IFABIT",
+  description: "A propos d'IFABIT",
+  keywords:
+    "achat crypto, vente crypto, échange crypto, plateforme crypto Afrique, transférer argent Afrique de l'Ouest, envoyer argent, recevoir argent, frais transfert, taux de change",
+};
+
+
 export default function AboutUs() {
   return (
     <>
@@ -112,7 +121,7 @@ export default function AboutUs() {
           <div className="absolute top-0 left-0 bg-primary-500 w-4/6 aspect-square rounded-full -translate-x-1/2 -translate-y-1/2"></div>
           <div className="container relative text-slate-100 min-h-[calc(100vh-var(--header-height))] flex flex-col items-center justify-center">
             <h2 className="font-heading font-bold text-4xl lg:text-6xl max-w-[30ch] text-center">
-              IFABIT: révolutionner les transactions numériques en Afrique.
+              IFABIT: Révolutionner les transactions numériques en Afrique.
             </h2>
           </div>
         </div>

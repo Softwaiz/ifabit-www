@@ -1,6 +1,7 @@
 import { CallToAction } from "@/blocks/home/call-to-action";
 import { cn } from "@/lib/utils";
 import "@/styles/home.scss";
+import { Metadata } from "next";
 import { DetailedHTMLProps, HTMLAttributes, ImgHTMLAttributes } from "react";
 
 function Member({
@@ -33,6 +34,13 @@ function Member({
     </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: "Notre equipe | IFABIT",
+  description: "Decouvrez les #Keypeople derriere IFABIT",
+  keywords:
+    "achat crypto, vente crypto, échange crypto, plateforme crypto Afrique, transférer argent Afrique de l'Ouest, envoyer argent, recevoir argent, frais transfert, taux de change",
+};
 
 export default function OurTeam() {
   return (

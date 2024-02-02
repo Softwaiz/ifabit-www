@@ -38,7 +38,7 @@ export async function GET(request: Request) {
         (p) => {
             return `    <url>
         <loc>https://www.ifabit.com${p.path}</loc>
-            <lastmod>${now.toUTCString()}</lastmod>
+            <lastmod>${now.toISOString()}</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.80</priority>
         </url>`

@@ -141,14 +141,7 @@ export const Footer = () => {
             © Copyright 2024. Tous droits réservés.
           </p>
           <p className="text-sm text-center text-gray-200 opacity-75">
-            ⚡ ERGOSTREAMS x {" "}
-            <a
-              className="hover:underline"
-              target="_blank"
-              href="https://www.softwaiz.co"
-            >
-              Softwaiz
-            </a>
+            ⚡ ERGOSTREAMS
           </p>
         </div>
       </div>

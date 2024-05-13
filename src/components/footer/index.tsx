@@ -94,11 +94,11 @@ export const Footer = () => {
             <ul className="mt-8 space-y-4">
               <li>
                 <a
-                  href="tel:+22996733534"
+                  href="tel:+22967218584"
                   title=""
                   className="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"
                 >
-                  Appel: (+229) 96 73 35 34
+                  Appel: (+229) 67 21 85 84
                 </a>
               </li>
               <li>
@@ -141,7 +141,7 @@ export const Footer = () => {
             © Copyright 2024. Tous droits réservés.
           </p>
           <p className="text-sm text-center text-gray-200 opacity-75">
-            ⚡ Dango-Nadey Groupe & {" "}
+            ⚡ ERGOSTREAMS x {" "}
             <a
               className="hover:underline"
               target="_blank"

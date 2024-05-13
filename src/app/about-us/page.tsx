@@ -74,11 +74,11 @@ function Section02() {
     <div className="feature grid grid-cols-1 lg:grid-cols-2 min-h-[60vh]">
       <div className="lg:hidden relative overflow-hidden bg-emerald-500 p-4 lg:p-0 rounded-md lg:rounded-none flex flex-col items-center justify-center">
         <TextOVerflow
-          text="ifa pay"
+          text="ifa cash"
           className="text-6xl font-bold uppercase font-heading whitespace-nowrap"
         />
         <SectionNumber text={"02"} />
-        <SectionTitle text={"IFA Pay"} />
+        <SectionTitle text={"IFA Cash"} />
       </div>
 
       <div className="py-4 lg:p-8 flex flex-col items-start justify-center">
@@ -94,11 +94,11 @@ function Section02() {
 
       <div className="relative overflow-hidden bg-emerald-500 hidden lg:flex flex-col items-center justify-center">
         <TextOVerflow
-          text="ifa pay"
+          text="ifa cash"
           className="text-6xl font-bold uppercase font-heading whitespace-nowrap"
         />
         <SectionNumber text={"02"} />
-        <SectionTitle text={"IFA Pay"} />
+        <SectionTitle text={"IFA Cash"} />
       </div>
     </div>
   );

@@ -11,9 +11,9 @@ export function AboutUs() {
         </div>
 
         <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div className="feature">
+          <div data-feature="cash" className="feature">
             <IconSendDollars className="w-16 h-auto" />
-            <h4 className="title">Transférez de l’argent à qui vous voulez</h4>
+            <h4 className="title">Transférez de l’argent à qui vous voulez.</h4>
             <p className="subtitle">
               Notre plateforme vous permet d’envoyer facilement de l’argent à
               vos proches ou vos partenaires commerciaux au Nigeria, au Ghana,
@@ -21,9 +21,9 @@ export function AboutUs() {
             </p>
           </div>
 
-          <div className="feature">
+          <div data-feature="exchange" className="feature">
             <IconSendReceive className="w-16 h-auto" />
-            <h4 className="title">Profitez des taux de change imbattables</h4>
+            <h4 className="title">Profitez des taux de change imbattables.</h4>
             <p className="subtitle">
               Vous souhaitez acheter ou vendre des Nairas, des Cedis, des Francs
               CFA ou d’autres devises ? Profitez de notre place de marché avec
@@ -31,7 +31,7 @@ export function AboutUs() {
             </p>
           </div>
 
-          <div className="feature">
+          <div data-feature="partner" className="feature">
             <IconHandshake className="w-16 h-auto" />
             <h4 className="title">
               Devenez partenaire, et gagnez de l'argent avec nous.

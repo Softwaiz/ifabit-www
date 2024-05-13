@@ -58,8 +58,9 @@ body {
 
 .about {
     .feature {
-        @apply p-8 bg-white rounded-md flex flex-col items-center justify-center gap-4 cursor-pointer transition-all;
-        @apply border hover:border-transparent hover:shadow-2xl hover:bg-primary-600 hover:text-white;
+        @apply p-8 bg-white rounded-md ;
+        @apply flex flex-col items-center justify-center gap-4 transition-all;
+        @apply hover:shadow-2xl hover:border-primary-600; //hover:text-white;
         min-height: 380px;
 
         --color: #020617;
@@ -70,11 +71,26 @@ body {
         }
 
         > .subtitle {
-            @apply text-sm;
+            @apply text-base text-justify;
         }
 
         &:hover {
-            --color: rgba(245, 245, 245, 1);
+            //--color: rgba(245, 245, 245, 1);
+        }
+
+        &[data-feature="cash"] {
+            @apply bg-pink-500 text-slate-50;
+            --color:  rgb(248 250 252); // slate 50;
+        }
+
+        &[data-feature="exchange"] {
+            @apply bg-yellow-500 text-slate-50;
+            --color:  rgb(248 250 252); // slate 50;
+        }
+
+        &[data-feature="partner"] {
+            @apply bg-emerald-500 text-slate-50;
+            --color:  rgb(248 250 252); // slate 50;
         }
     }
 }

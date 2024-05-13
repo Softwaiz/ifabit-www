@@ -5,7 +5,7 @@ export function CallToAction() {
     <section className="section w-full py-10 bg-gray-100 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="w-full text-center">
-          <h2 className="font-bold leading-tight text-black sm:text-4xl text-4xl lg:text-5xl">
+          <h2 className="font-bold leading-tight text-gray-900 sm:text-4xl text-4xl lg:text-5xl">
             Prêt à découvrir ifabit ?
           </h2>
 

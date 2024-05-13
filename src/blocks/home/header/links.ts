@@ -1,14 +1,14 @@
 export const HeaderLinks = [
     {
-        title: "A propos",
+        title: "A Propos",
         href: "/about-us"
     },
     {
-        title: "Les wallets",
+        title: "Les Wallets",
         href: "/wallets"
     },
     {
-        title: "Devenez partenaire",
+        title: "Devenez Partenaire",
         href: "/business"
     },
     {

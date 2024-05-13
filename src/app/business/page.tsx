@@ -70,7 +70,7 @@ export default function BusinessOffer() {
                     </li>
                     <li>Remplir le contrat de demande</li>
                     <li>Un plan de localisation géographique du local</li>
-                    <li>Etre âgé de 18 ans au 31 / 12 / 2023</li>
+                    <li>Etre âgé de 18 ans au 31 / 12 / 2024</li>
                   </ul>
                 </div>
               </div>

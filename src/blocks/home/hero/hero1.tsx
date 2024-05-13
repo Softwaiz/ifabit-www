@@ -32,16 +32,17 @@ export function Hero() {
             <span className="off-ramp-text">off-ramp</span>.
           </h1>
           <p className="font-body text-lg">
-            Votre passerelle tout-en-un pour trader facilement cryptos, e-money
-            et plus
+            Notre plateforme vous propose une rampe d'accès et de sortie pour
+            les monnaies digitales : opérations d'achat (on-ramp) et de vente
+            (off-ramp) disponibles.
           </p>
           <div>
             <Link
               href="https://app.ifabit.com"
               className="md:w-auto px-4 lg:px-6 py-3 text-sm uppercase font-bold rounded-full text-slate-200 transition-all bg-gradient-to-tr bg-primary-500 hover:bg-secondary-600 flex flex-row items-center justify-center gap-4"
             >
-              Commencer maintenant
-              <LogIn fontSize={24}/>
+              Commencez maintenant
+              <LogIn fontSize={24} />
             </Link>
           </div>
         </div>

@@ -1,8 +1,9 @@
 import { CallToAction } from "@/blocks/home/call-to-action";
 import "@/styles/home.scss";
 import { AboutPageMotions } from "./motions";
-import { PropsWithChildren } from "react";
+import { HTMLAttributes, PropsWithChildren } from "react";
 import { Metadata } from "next";
+import { cn } from "@/lib/utils";
 
 const TextOVerflow = ({
   text,
@@ -38,8 +39,16 @@ function SectionTitle({ text }: { text: string }) {
   );
 }
 
-function SectionText({ children }: PropsWithChildren<{}>) {
-  return <p className="text-base lg:text-lg">{children}</p>;
+function SectionText({
+  children,
+  className = "",
+  ...otherProps
+}: PropsWithChildren<HTMLAttributes<HTMLParagraphElement>>) {
+  return (
+    <p {...otherProps} className={cn("text-base lg:text-lg", className)}>
+      {children}
+    </p>
+  );
 }
 
 function Section01() {
@@ -56,13 +65,13 @@ function Section01() {
       </div>
 
       <div className="py-4 lg:p-8 flex flex-col items-start justify-center">
-        <SectionText>
-          Un service qui vous permet d'acheter, de vendre et d'échanger des
-          cryptomonnaies ainsi que les monnaies électroniques telles que perfect
-          money de manière rapide, sécurisée et discrète. Deux options : retirer
-          vos avoirs auprès de nos partenaires sans dépendre d'un réseau local
-          et en toute sécurité, ou retirer via le réseau de votre choix,
-          moyennant les frais de retrait du réseau.
+        <SectionText className="text-justify">
+          Un service permettant d'acheter, vendre et échanger des cryptomonnaies
+          ainsi que des monnaies électroniques telles que Perfect Money, de
+          manière rapide, sécurisée et discrète. Deux options s'offrent à vous :
+          retirer vos fonds auprès de nos partenaires sans frais ou effectuer un
+          retrait via le réseau de votre choix, auxquels cas des frais seront
+          applicables.
         </SectionText>
       </div>
     </div>
@@ -82,13 +91,12 @@ function Section02() {
       </div>
 
       <div className="py-4 lg:p-8 flex flex-col items-start justify-center">
-        <SectionText>
-          Nous facilitons toutes les transactions financières internationales
-          grâce à ce service. Vous n'aurez plus aucune raison de ne pas envoyer
-          ou recevoir de l'argent de vos proches, car nous offrons des
-          transferts instantanés à des coûts très compétitifs.
-          <br />
-          En résumé : Dépôts gratuits, Retraits presque gratuits.
+        <SectionText className="text-justify">
+          Notre service facilite toutes vos transactions financières
+          internationales en fcfa. Plus aucune raison de ne pas envoyer ou
+          recevoir de l'argent de vos proches, grâce à nos transferts
+          instantanés à des coûts très compétitifs. En résumé: dépôts gratuits,
+          retraits gratuits, transferts à 0.50%.
         </SectionText>
       </div>
 
@@ -111,7 +119,6 @@ export const metadata: Metadata = {
     "achat crypto, vente crypto, échange crypto, plateforme crypto Afrique, transférer argent Afrique de l'Ouest, envoyer argent, recevoir argent, frais transfert, taux de change",
 };
 
-
 export default function AboutUs() {
   return (
     <>
@@ -127,7 +134,7 @@ export default function AboutUs() {
         </div>
         <div className="flex flex-col items-center justify-start px-4 md:px-0">
           <div className="container  py-16 lg:py-24 flex flex-col items-center justify-center">
-            <p className="max-w-[80ch] text-base lg:text-lg">
+            <p className="max-w-[80ch] text-base lg:text-lg text-justify">
               IFABIT se présente comme une révolution dans le domaine des
               plateformes d'échange internationales. Cette startup appartient à
               l'une des entreprises pionnières du secteur financier en Afrique

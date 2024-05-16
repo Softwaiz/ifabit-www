@@ -4,13 +4,12 @@ import "@/styles/home.scss";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Les portefeuilles numériques IFAWALLETS | IFABIT",
-    description: "Decouvrez les portefeuilles IFA",
-    keywords:
-      "achat crypto, vente crypto, échange crypto, plateforme crypto Afrique, transférer argent Afrique de l'Ouest, envoyer argent, recevoir argent, frais transfert, taux de change",
-  };
+  title: "Les portefeuilles numériques IFAWALLETS | IFABIT",
+  description: "Decouvrez les portefeuilles IFA",
+  keywords:
+    "achat crypto, vente crypto, échange crypto, plateforme crypto Afrique, transférer argent Afrique de l'Ouest, envoyer argent, recevoir argent, frais transfert, taux de change",
+};
 
-  
 export default function OurWallets() {
   return (
     <>
@@ -25,9 +24,8 @@ export default function OurWallets() {
 
         <div className="flex flex-col items-center justify-start">
           <div className="max-w-7xl grid grid-cols-3 gap-4 text-md py-8 md:py-12 lg:py-24 px-8 md:px-4">
-            
-            <div className="col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="shadow-md border rounded-lg p-4">
+            <div className="col-span-3 grid grid-cols-3 md:grid-cols-3 gap-4">
+              <div className="col-span-3 shadow-md border rounded-lg p-4">
                 <h2 className="font-heading font-bold text-2xl">
                   Les wallets IFA XOF
                 </h2>
@@ -37,20 +35,20 @@ export default function OurWallets() {
                 </p>
               </div>
 
-              <div className="shadow-md border rounded-lg p-4">
-                <h2 className="font-heading font-bold text-2xl">
-                  Les wallets IFA USD
-                </h2>
-                <p>
-                  Les IFA USD sont des devises détenues dans les portefeuilles
-                  en U et représentant vos avoirs en dollar américain.
-                </p>
-              </div>
-
+              {false && (
+                <div className="shadow-md border rounded-lg p-4">
+                  <h2 className="font-heading font-bold text-2xl">
+                    Les wallets IFA USD
+                  </h2>
+                  <p>
+                    Les IFA USD sont des devises détenues dans les portefeuilles
+                    en U et représentant vos avoirs en dollar américain.
+                  </p>
+                </div>
+              )}
             </div>
 
             <div className="col-span-3 flex flex-col items-start justify-start gap-4">
-              
               <p>
                 À partir de vos portefeuilles, vous pouvez envoyer des fonds à
                 d'autres personnes, effectuer des paiements et/ou souscrire à
@@ -75,7 +73,6 @@ export default function OurWallets() {
                 types de portefeuilles sans passer par un swap, si cette option
                 est disponible au moment de la demande.
               </p>
-
             </div>
           </div>
           <CallToAction />

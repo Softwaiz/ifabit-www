@@ -26,7 +26,7 @@ export function Hero() {
           />
         </div>
         <div className="col-span-5 lg:col-span-3 px-4 py-8 my-8 lg:m-0 lg:p-0 flex flex-col items-start justify-center gap-6">
-          <h1 className="font-heading font-extrabold text-4xl lg:text-7xl title">
+          <h1 className="lg:pt-16 xl:pt-0 font-heading font-extrabold text-4xl lg:text-7xl title">
             Achetez ici des monnaies digitales{" "}
             <span className="on-ramp-text">on-ramp</span>,<br /> Ou vendez{" "}
             <span className="off-ramp-text">off-ramp</span>.
